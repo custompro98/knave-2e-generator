@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "module": "esnext",
+        "target": "esnext",
+        "checkJs": true
+    },
+    "include": [
+        "**/*.mjs"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}
