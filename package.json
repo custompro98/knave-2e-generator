@@ -1,6 +1,6 @@
 {
   "name": "knave-2e-generator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Generate just about anything from the Knave 2e book",
   "main": "src/index.mjs",
   "repository": "https://github.com/custompro98/knave-2e-generator",
@@ -10,6 +10,7 @@
   "engines": {
     "node": ">=20.0.0"
   },
+  "types": "./src/index.mjs",
   "scripts": {
     "run": "node ./src/index.mjs"
   },
