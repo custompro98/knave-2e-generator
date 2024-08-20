@@ -5,7 +5,7 @@
         "checkJs": true
     },
     "include": [
-        "**/*.mjs"
+        "src/**/*.mjs"
     ],
     "exclude": [
         "node_modules"
