@@ -1,15 +1,19 @@
 {
-  "scripts": {
-    "run": "node ./src/index.mjs"
-  },
-  "dependencies": {
-    "ollama": "^0.5.8"
-  },
   "name": "knave-2e-generator",
   "version": "1.0.0",
   "description": "Generate just about anything from the Knave 2e book",
   "main": "src/index.mjs",
   "repository": "https://github.com/custompro98/knave-2e-generator",
   "author": "custompro98",
-  "license": "MIT"
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "run": "node ./src/index.mjs"
+  },
+  "dependencies": {
+    "ollama": "^0.5.8"
+  }
 }
