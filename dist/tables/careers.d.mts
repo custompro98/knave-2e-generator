@@ -1,2 +1,2 @@
-export const books: string[];
+export const careers: string[];
 //# sourceMappingURL=careers.d.mts.map
