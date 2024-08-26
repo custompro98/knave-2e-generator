@@ -1,4 +1,4 @@
-export const books = [
+export const careers = [
   "Acolyte (candlestick, censer, incense)",
   "Acrobat (flash powder, balls, lamp oil)",
   "Actor (wig, makeup, costume)",
