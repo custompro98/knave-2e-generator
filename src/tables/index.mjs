@@ -1,72 +1,72 @@
-/** @typedef { 'activities' | 'animals' | 'animalBodies' | 'animalEars' | 'animalEyes' | 'animalForms' | 'animalHeads' | 'animalLimbs' | 'animalScents' | 'animalSkins' | 'animalTails' | 'animalTeeth' | 'animalVoices' | 'animalSkins' | 'archetypes' | 'assets' | 'bodyTextures' | 'books' | 'buildings' | 'cityEvents' | 'cityThemes' | 'clothing' | 'colors' | 'colorSkies' | 'delusions' | 'delveShifts' | 'disasters' | 'domains' | 'dungeons' | 'effects' | 'effectAuras' | 'effectBlasts' | 'effectBolts' | 'effectRays' | 'effectRains' | 'effectWalls' | 'elementalBloods' | 'elementalBodies' | 'elementalBreaths' | 'elementalControls' | 'elementalAuras' | 'elementalBlasts' | 'elementalBolts' | 'elementalRays' | 'elementalWalls'  | 'elementalForms' | 'elements' | 'elementFlows' | 'elementRains' | 'elementSkins' | 'fabrics' | 'factions' | 'factionAllies' | 'factionTraits' | 'factionWars' | 'fearsDomain' | 'fearsSymbol' | 'foodAddict' | 'foods' | 'foodRains' | 'foodTraits' | 'forms' | 'giantAnimals' | 'goals' | 'hazards' | 'ingredients' | 'inns' | 'itemTraits' | 'liabilities' | 'magicSchools' | 'mannerisms' | 'materials' | 'mechanisms' | 'miscellaneousItems' | 'missions' | 'monsters' | 'monsterAllies' | 'monsterSkins' | 'monsterTraits' | 'mutations' | 'names' | 'npcDetails' | 'organs' | 'personalities' | 'placeTraits' | 'potions' | 'powers' | 'professions' | 'qualities' | 'rewards' | 'rooms' | 'roomThemes' | 'scents' | 'skinColors' | 'skinTextures' | 'sounds' | 'structures' | 'surnames' | 'symbols' | 'tactics' | 'tastes' | 'tasteRains' | 'textures' | 'textureRains' | 'tools' | 'traps' | 'trapEffects' | 'travelShifts' | 'treasures' | 'weaknesses' | 'weapons' | 'weaponRains' | 'wizardNames' } TableName */
+/** @typedef { 'activities' | 'animals' | 'animalBodies' | 'animalEars' | 'animalEyes' | 'animalForms' | 'animalHeads' | 'animalLimbs' | 'animalScents' | 'animalSkins' | 'animalTails' | 'animalTeeth' | 'animalVoices' | 'animalSkins' | 'archetypes' | 'assets' | 'bodyTextures' | 'books' | 'buildings' | 'careers' | 'cityEvents' | 'cityThemes' | 'clothing' | 'colors' | 'colorSkies' | 'delusions' | 'delveShifts' | 'disasters' | 'domains' | 'dungeons' | 'effects' | 'effectAuras' | 'effectBlasts' | 'effectBolts' | 'effectRays' | 'effectRains' | 'effectWalls' | 'elementalBloods' | 'elementalBodies' | 'elementalBreaths' | 'elementalControls' | 'elementalAuras' | 'elementalBlasts' | 'elementalBolts' | 'elementalRays' | 'elementalWalls'  | 'elementalForms' | 'elements' | 'elementFlows' | 'elementRains' | 'elementSkins' | 'fabrics' | 'factions' | 'factionAllies' | 'factionTraits' | 'factionWars' | 'fearsDomain' | 'fearsSymbol' | 'foodAddict' | 'foods' | 'foodRains' | 'foodTraits' | 'forms' | 'giantAnimals' | 'goals' | 'hazards' | 'ingredients' | 'inns' | 'itemTraits' | 'liabilities' | 'magicSchools' | 'mannerisms' | 'materials' | 'mechanisms' | 'miscellaneousItems' | 'missions' | 'monsters' | 'monsterAllies' | 'monsterSkins' | 'monsterTraits' | 'mutations' | 'names' | 'npcDetails' | 'organs' | 'personalities' | 'placeTraits' | 'potions' | 'powers' | 'professions' | 'qualities' | 'rewards' | 'rooms' | 'roomThemes' | 'scents' | 'skinColors' | 'skinTextures' | 'sounds' | 'structures' | 'surnames' | 'symbols' | 'tactics' | 'tastes' | 'tasteRains' | 'textures' | 'textureRains' | 'tools' | 'traps' | 'trapEffects' | 'travelShifts' | 'treasures' | 'weaknesses' | 'weapons' | 'weaponRains' | 'wizardNames' } TableName */
 
-import { animals } from "./animals.mjs";
-import { monsters } from "./monsters.mjs";
-import { monsterTraits } from "./monster-traits.mjs";
-import { rolldN } from "../utility/roll.mjs";
-import { colors } from "./colors.mjs";
-import { elements } from "./elements.mjs";
-import { delusions } from "./delusions.mjs";
 import { activities } from "./activities.mjs";
+import { animals } from "./animals.mjs";
+import { archetypes } from "./archetypes.mjs";
 import { assets } from "./assets.mjs";
 import { books } from "./books.mjs";
 import { buildings } from "./buildings.mjs";
-import { inns } from "./inns.mjs";
-import { cityThemes } from "./city-themes.mjs";
+import { careers } from "./careers.mjs";
 import { cityEvents } from "./city-events.mjs";
+import { cityThemes } from "./city-themes.mjs";
 import { clothing } from "./clothing.mjs";
+import { colors } from "./colors.mjs";
+import { delusions } from "./delusions.mjs";
+import { delveShifts } from "./delve-shifts.mjs";
 import { disasters } from "./disasters.mjs";
 import { domains } from "./domains.mjs";
 import { dungeons } from "./dungeons.mjs";
 import { effects } from "./effects.mjs";
+import { elementalForms } from "./elemental-forms.mjs";
+import { elements } from "./elements.mjs";
 import { fabrics } from "./fabrics.mjs";
 import { factions } from "./factions.mjs";
-import { symbols } from "./symbols.mjs";
+import { foodTraits } from "./food-traits.mjs";
 import { foods } from "./foods.mjs";
 import { forms } from "./forms.mjs";
-import { foodTraits } from "./food-traits.mjs";
 import { goals } from "./goals.mjs";
 import { hazards } from "./hazards.mjs";
-import { delveShifts } from "./delve-shifts.mjs";
+import { ingredients } from "./ingredients.mjs";
+import { inns } from "./inns.mjs";
+import { itemTraits } from "./item-traits.mjs";
 import { liabilities } from "./liabilities.mjs";
 import { magicSchools } from "./magic-schools.mjs";
 import { mannerisms } from "./mannerisms.mjs";
-import { archetypes } from "./archetypes.mjs";
 import { materials } from "./materials.mjs";
 import { mechanisms } from "./mechanisms.mjs";
 import { miscellaneousItems } from "./miscellaneous-items.mjs";
-import { ingredients } from "./ingredients.mjs";
 import { missions } from "./missions.mjs";
+import { monsterTraits } from "./monster-traits.mjs";
+import { monsters } from "./monsters.mjs";
 import { mutations } from "./mutations.mjs";
-import { textures } from "./textures.mjs";
 import { names, surnames } from "./names.mjs";
 import { npcDetails } from "./npc-details.mjs";
 import { organs } from "./organs.mjs";
 import { personalities } from "./personalities.mjs";
 import { placeTraits } from "./place-traits.mjs";
 import { potions } from "./potions.mjs";
-import { elementalForms } from "./elemental-forms.mjs";
 import { powers } from "./powers.mjs";
 import { professions } from "./professions.mjs";
 import { qualities } from "./qualities.mjs";
-import { rooms } from "./rooms.mjs";
+import { rewards } from "./rewards.mjs";
+import { rolldN } from "../utility/roll.mjs";
 import { roomThemes } from "./room-themes.mjs";
-import { itemTraits } from "./item-traits.mjs";
+import { rooms } from "./rooms.mjs";
 import { scents } from "./scents.mjs";
 import { sounds } from "./sounds.mjs";
 import { structures } from "./structures.mjs";
+import { symbols } from "./symbols.mjs";
 import { tactics } from "./tactics.mjs";
 import { tastes } from "./tastes.mjs";
+import { textures } from "./textures.mjs";
+import { tools } from "./tools.mjs";
 import { trapEffects } from "./trap-effects.mjs";
 import { traps } from "./traps.mjs";
-import { tools } from "./tools.mjs";
-import { weapons } from "./weapons.mjs";
-import { treasures } from "./treasures.mjs";
-import { rewards } from "./rewards.mjs";
-import { weaknesses } from "./weaknesses.mjs";
-import { wizardNames } from "./wizard-names.mjs";
 import { travelShifts } from "./travel-shifts.mjs";
-
+import { treasures } from "./treasures.mjs";
+import { weaknesses } from "./weaknesses.mjs";
+import { weapons } from "./weapons.mjs";
+import { wizardNames } from "./wizard-names.mjs";
 /**
  * @type {Record<TableName, string[]>}
  */
@@ -89,6 +89,7 @@ const tables = {
   bodyTextures: textures.map((texture) => `${texture} body`),
   books: books,
   buildings: buildings,
+  careers: careers,
   cityEvents: cityEvents,
   cityThemes: cityThemes,
   clothing: clothing,
@@ -198,7 +199,7 @@ export function rollOnTable(table) {
   if (output.startsWith("table_")) {
     const nextTable = output.replace("table_", "");
 
-    console.log("Rolling from", table, "to", nextTable);
+    console.debug("Rolling from", table, "to", nextTable);
 
     if (!tables[nextTable]) {
       console.error("No table found for", table);
