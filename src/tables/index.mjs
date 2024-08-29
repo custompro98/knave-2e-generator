@@ -1,8 +1,9 @@
-/** @typedef { 'activities' | 'animals' | 'animalBodies' | 'animalEars' | 'animalEyes' | 'animalForms' | 'animalHeads' | 'animalLimbs' | 'animalScents' | 'animalSkins' | 'animalTails' | 'animalTeeth' | 'animalVoices' | 'animalSkins' | 'archetypes' | 'assets' | 'bodyTextures' | 'books' | 'buildings' | 'careers' | 'cityEvents' | 'cityThemes' | 'clothing' | 'colors' | 'colorSkies' | 'delusions' | 'delveShifts' | 'disasters' | 'domains' | 'dungeons' | 'effects' | 'effectAuras' | 'effectBlasts' | 'effectBolts' | 'effectRays' | 'effectRains' | 'effectWalls' | 'elementalBloods' | 'elementalBodies' | 'elementalBreaths' | 'elementalControls' | 'elementalAuras' | 'elementalBlasts' | 'elementalBolts' | 'elementalRays' | 'elementalWalls'  | 'elementalForms' | 'elements' | 'elementFlows' | 'elementRains' | 'elementSkins' | 'fabrics' | 'factions' | 'factionAllies' | 'factionTraits' | 'factionWars' | 'fearsDomain' | 'fearsSymbol' | 'foodAddict' | 'foods' | 'foodRains' | 'foodTraits' | 'forms' | 'giantAnimals' | 'goals' | 'hazards' | 'ingredients' | 'inns' | 'itemTraits' | 'liabilities' | 'magicSchools' | 'mannerisms' | 'materials' | 'mechanisms' | 'miscellaneousItems' | 'missions' | 'monsters' | 'monsterAllies' | 'monsterSkins' | 'monsterTraits' | 'mutations' | 'names' | 'npcDetails' | 'organs' | 'personalities' | 'placeTraits' | 'potions' | 'powers' | 'professions' | 'qualities' | 'rewards' | 'rooms' | 'roomThemes' | 'scents' | 'skinColors' | 'skinTextures' | 'sounds' | 'spellbooks' | 'structures' | 'surnames' | 'symbols' | 'tactics' | 'tastes' | 'tasteRains' | 'textures' | 'textureRains' | 'tools' | 'traps' | 'trapEffects' | 'travelShifts' | 'treasures' | 'weaknesses' | 'weapons' | 'weaponRains' | 'wizardNames' } TableName */
+/** @typedef { 'activities' | 'animals' | 'animalBodies' | 'animalEars' | 'animalEyes' | 'animalForms' | 'animalHeads' | 'animalLimbs' | 'animalScents' | 'animalSkins' | 'animalTails' | 'animalTeeth' | 'animalVoices' | 'animalSkins' | 'archetypes' | 'armors' | 'assets' | 'bodyTextures' | 'books' | 'buildings' | 'careers' | 'cityEvents' | 'cityThemes' | 'clothing' | 'colors' | 'colorSkies' | 'delusions' | 'delveShifts' | 'disasters' | 'domains' | 'dungeons' | 'effects' | 'effectAuras' | 'effectBlasts' | 'effectBolts' | 'effectRays' | 'effectRains' | 'effectWalls' | 'elementalBloods' | 'elementalBodies' | 'elementalBreaths' | 'elementalControls' | 'elementalAuras' | 'elementalBlasts' | 'elementalBolts' | 'elementalRays' | 'elementalWalls'  | 'elementalForms' | 'elements' | 'elementFlows' | 'elementRains' | 'elementSkins' | 'fabrics' | 'factions' | 'factionAllies' | 'factionTraits' | 'factionWars' | 'fearsDomain' | 'fearsSymbol' | 'foodAddict' | 'foods' | 'foodRains' | 'foodTraits' | 'forms' | 'generalItems' | 'giantAnimals' | 'goals' | 'hazards' | 'ingredients' | 'inns' | 'itemTraits' | 'liabilities' | 'magicSchools' | 'mannerisms' | 'materials' | 'mechanisms' | 'miscellaneousItems' | 'missions' | 'monsters' | 'monsterAllies' | 'monsterSkins' | 'monsterTraits' | 'mutations' | 'names' | 'npcDetails' | 'organs' | 'personalities' | 'placeTraits' | 'potions' | 'powers' | 'professions' | 'qualities' | 'rewards' | 'rooms' | 'roomThemes' | 'scents' | 'skinColors' | 'skinTextures' | 'sounds' | 'spellbooks' | 'structures' | 'surnames' | 'symbols' | 'tactics' | 'tastes' | 'tasteRains' | 'textures' | 'textureRains' | 'tools' | 'traps' | 'trapEffects' | 'travelShifts' | 'treasures' | 'weaknesses' | 'weapons' | 'weaponRains' | 'wizardNames' } TableName */
 
 import { activities } from "./activities.mjs";
 import { animals } from "./animals.mjs";
 import { archetypes } from "./archetypes.mjs";
+import { armors } from "./armors.mjs";
 import { assets } from "./assets.mjs";
 import { books } from "./books.mjs";
 import { buildings } from "./buildings.mjs";
@@ -24,6 +25,7 @@ import { factions } from "./factions.mjs";
 import { foodTraits } from "./food-traits.mjs";
 import { foods } from "./foods.mjs";
 import { forms } from "./forms.mjs";
+import { generalItems } from "./general-items.mjs";
 import { goals } from "./goals.mjs";
 import { hazards } from "./hazards.mjs";
 import { ingredients } from "./ingredients.mjs";
@@ -86,6 +88,7 @@ const tables = {
   animalVoices: animals.map((animal) => `Voice of ${animal.toLowerCase()}`),
   animals: animals,
   archetypes: archetypes,
+  armors: armors,
   assets: assets,
   bodyTextures: textures.map((texture) => `${texture} body`),
   books: books,
@@ -134,6 +137,7 @@ const tables = {
   foodTraits: foodTraits,
   foods: foods,
   forms: forms,
+  generalItems,
   giantAnimals: animals.map((animal) => `Giant ${animal.toLowerCase()}`),
   goals: goals,
   hazards: hazards,
