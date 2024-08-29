@@ -1,4 +1,4 @@
-/** @typedef { 'activities' | 'animals' | 'animalBodies' | 'animalEars' | 'animalEyes' | 'animalForms' | 'animalHeads' | 'animalLimbs' | 'animalScents' | 'animalSkins' | 'animalTails' | 'animalTeeth' | 'animalVoices' | 'animalSkins' | 'archetypes' | 'assets' | 'bodyTextures' | 'books' | 'buildings' | 'careers' | 'cityEvents' | 'cityThemes' | 'clothing' | 'colors' | 'colorSkies' | 'delusions' | 'delveShifts' | 'disasters' | 'domains' | 'dungeons' | 'effects' | 'effectAuras' | 'effectBlasts' | 'effectBolts' | 'effectRays' | 'effectRains' | 'effectWalls' | 'elementalBloods' | 'elementalBodies' | 'elementalBreaths' | 'elementalControls' | 'elementalAuras' | 'elementalBlasts' | 'elementalBolts' | 'elementalRays' | 'elementalWalls'  | 'elementalForms' | 'elements' | 'elementFlows' | 'elementRains' | 'elementSkins' | 'fabrics' | 'factions' | 'factionAllies' | 'factionTraits' | 'factionWars' | 'fearsDomain' | 'fearsSymbol' | 'foodAddict' | 'foods' | 'foodRains' | 'foodTraits' | 'forms' | 'giantAnimals' | 'goals' | 'hazards' | 'ingredients' | 'inns' | 'itemTraits' | 'liabilities' | 'magicSchools' | 'mannerisms' | 'materials' | 'mechanisms' | 'miscellaneousItems' | 'missions' | 'monsters' | 'monsterAllies' | 'monsterSkins' | 'monsterTraits' | 'mutations' | 'names' | 'npcDetails' | 'organs' | 'personalities' | 'placeTraits' | 'potions' | 'powers' | 'professions' | 'qualities' | 'rewards' | 'rooms' | 'roomThemes' | 'scents' | 'skinColors' | 'skinTextures' | 'sounds' | 'structures' | 'surnames' | 'symbols' | 'tactics' | 'tastes' | 'tasteRains' | 'textures' | 'textureRains' | 'tools' | 'traps' | 'trapEffects' | 'travelShifts' | 'treasures' | 'weaknesses' | 'weapons' | 'weaponRains' | 'wizardNames' } TableName */
+/** @typedef { 'activities' | 'animals' | 'animalBodies' | 'animalEars' | 'animalEyes' | 'animalForms' | 'animalHeads' | 'animalLimbs' | 'animalScents' | 'animalSkins' | 'animalTails' | 'animalTeeth' | 'animalVoices' | 'animalSkins' | 'archetypes' | 'assets' | 'bodyTextures' | 'books' | 'buildings' | 'careers' | 'cityEvents' | 'cityThemes' | 'clothing' | 'colors' | 'colorSkies' | 'delusions' | 'delveShifts' | 'disasters' | 'domains' | 'dungeons' | 'effects' | 'effectAuras' | 'effectBlasts' | 'effectBolts' | 'effectRays' | 'effectRains' | 'effectWalls' | 'elementalBloods' | 'elementalBodies' | 'elementalBreaths' | 'elementalControls' | 'elementalAuras' | 'elementalBlasts' | 'elementalBolts' | 'elementalRays' | 'elementalWalls'  | 'elementalForms' | 'elements' | 'elementFlows' | 'elementRains' | 'elementSkins' | 'fabrics' | 'factions' | 'factionAllies' | 'factionTraits' | 'factionWars' | 'fearsDomain' | 'fearsSymbol' | 'foodAddict' | 'foods' | 'foodRains' | 'foodTraits' | 'forms' | 'giantAnimals' | 'goals' | 'hazards' | 'ingredients' | 'inns' | 'itemTraits' | 'liabilities' | 'magicSchools' | 'mannerisms' | 'materials' | 'mechanisms' | 'miscellaneousItems' | 'missions' | 'monsters' | 'monsterAllies' | 'monsterSkins' | 'monsterTraits' | 'mutations' | 'names' | 'npcDetails' | 'organs' | 'personalities' | 'placeTraits' | 'potions' | 'powers' | 'professions' | 'qualities' | 'rewards' | 'rooms' | 'roomThemes' | 'scents' | 'skinColors' | 'skinTextures' | 'sounds' | 'spellbooks' | 'structures' | 'surnames' | 'symbols' | 'tactics' | 'tastes' | 'tasteRains' | 'textures' | 'textureRains' | 'tools' | 'traps' | 'trapEffects' | 'travelShifts' | 'treasures' | 'weaknesses' | 'weapons' | 'weaponRains' | 'wizardNames' } TableName */
 
 import { activities } from "./activities.mjs";
 import { animals } from "./animals.mjs";
@@ -54,6 +54,7 @@ import { roomThemes } from "./room-themes.mjs";
 import { rooms } from "./rooms.mjs";
 import { scents } from "./scents.mjs";
 import { sounds } from "./sounds.mjs";
+import { spellbooks } from "./spellbooks.mjs";
 import { structures } from "./structures.mjs";
 import { symbols } from "./symbols.mjs";
 import { tactics } from "./tactics.mjs";
@@ -167,6 +168,7 @@ const tables = {
   skinColors: colors.map((color) => `${color} skin`),
   skinTextures: textures.map((texture) => `${texture} skin`),
   sounds: sounds,
+  spellbooks: spellbooks,
   structures: structures,
   surnames: surnames,
   symbols: symbols,
