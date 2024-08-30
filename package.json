@@ -1,6 +1,6 @@
 {
   "name": "knave-2e-generator",
-  "version": "1.5.1",
+  "version": "1.5.2",
   "description": "Generate just about anything from the Knave 2e book",
   "main": "src/index.mjs",
   "repository": "https://github.com/custompro98/knave-2e-generator",
@@ -13,7 +13,8 @@
   "types": "./dist/index.d.mts",
   "scripts": {
     "run": "node ./src/index.mjs",
-    "prepublishOnly": "tsc"
+    "prepublishOnly": "tsc",
+    "types:generate": "tsc"
   },
   "dependencies": {},
   "devDependencies": {
