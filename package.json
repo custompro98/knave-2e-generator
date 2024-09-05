@@ -13,8 +13,8 @@
   "types": "./dist/index.d.mts",
   "scripts": {
     "run": "node ./src/index.mjs",
-    "prepublishOnly": "tsc",
-    "types:generate": "tsc"
+    "prepublishOnly": "yarn types:generate",
+    "types:generate": "tsc --allowJs --declaration --emitDeclarationOnly --declarationMap --outDir dist src/index.mjs"
   },
   "dependencies": {},
   "devDependencies": {
