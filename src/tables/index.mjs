@@ -1,4 +1,4 @@
-/** @typedef { 'activities' | 'animals' | 'animalBodies' | 'animalEars' | 'animalEyes' | 'animalForms' | 'animalHeads' | 'animalLimbs' | 'animalScents' | 'animalSkins' | 'animalTails' | 'animalTeeth' | 'animalVoices' | 'animalSkins' | 'archetypes' | 'armors' | 'assets' | 'bodyTextures' | 'books' | 'buildings' | 'careers' | 'cityEvents' | 'cityThemes' | 'clothing' | 'colors' | 'colorSkies' | 'delusions' | 'delveShifts' | 'disasters' | 'domains' | 'dungeons' | 'effects' | 'effectAuras' | 'effectBlasts' | 'effectBolts' | 'effectRays' | 'effectRains' | 'effectWalls' | 'elementalBloods' | 'elementalBodies' | 'elementalBreaths' | 'elementalControls' | 'elementalAuras' | 'elementalBlasts' | 'elementalBolts' | 'elementalRays' | 'elementalWalls'  | 'elementalForms' | 'elements' | 'elementFlows' | 'elementRains' | 'elementSkins' | 'fabrics' | 'factions' | 'factionAllies' | 'factionTraits' | 'factionWars' | 'fearsDomain' | 'fearsSymbol' | 'foodAddict' | 'foods' | 'foodRains' | 'foodTraits' | 'forms' | 'generalItems' | 'giantAnimals' | 'goals' | 'hazards' | 'ingredients' | 'inns' | 'itemTraits' | 'liabilities' | 'magicSchools' | 'mannerisms' | 'materials' | 'mechanisms' | 'miscellaneousItems' | 'missions' | 'monsters' | 'monsterAllies' | 'monsterSkins' | 'monsterTraits' | 'mutations' | 'names' | 'npcDetails' | 'organs' | 'personalities' | 'placeTraits' | 'potions' | 'powers' | 'professions' | 'qualities' | 'rewards' | 'rooms' | 'roomThemes' | 'scents' | 'skinColors' | 'skinTextures' | 'sounds' | 'spellbooks' | 'structures' | 'surnames' | 'symbols' | 'tactics' | 'tastes' | 'tasteRains' | 'textures' | 'textureRains' | 'tools' | 'traps' | 'trapEffects' | 'travelShifts' | 'treasures' | 'weaknesses' | 'weapons' | 'weaponRains' | 'wizardNames' } TableName */
+/** @typedef { 'activities' | 'animals' | 'animalBodies' | 'animalEars' | 'animalEyes' | 'animalForms' | 'animalHeads' | 'animalLimbs' | 'animalScents' | 'animalSkins' | 'animalTails' | 'animalTeeth' | 'animalVoices' | 'animalSkins' | 'archetypes' | 'armors' | 'assets' | 'bodyTextures' | 'books' | 'buildings' | 'careers' | 'cityEvents' | 'cityThemes' | 'clothing' | 'colors' | 'colorSkies' | 'delusions' | 'delveShifts' | 'disasters' | 'domains' | 'dungeons' | 'effects' | 'effectAuras' | 'effectBlasts' | 'effectBolts' | 'effectRays' | 'effectRains' | 'effectWalls' | 'elementalBloods' | 'elementalBodies' | 'elementalBreaths' | 'elementalControls' | 'elementalAuras' | 'elementalBlasts' | 'elementalBolts' | 'elementalRays' | 'elementalWalls'  | 'elementalForms' | 'elements' | 'elementFields' | 'elementFlows' | 'elementRains' | 'elementSkins' | 'fabrics' | 'factions' | 'factionAllies' | 'factionTraits' | 'factionWars' | 'fearsDomain' | 'fearsSymbol' | 'foodAddict' | 'foods' | 'foodRains' | 'foodTraits' | 'forms' | 'generalItems' | 'giantAnimals' | 'goals' | 'hazards' | 'ingredients' | 'inns' | 'itemTraits' | 'liabilities' | 'locations' | 'magicSchools' | 'mannerisms' | 'materials' | 'mechanisms' | 'miscellaneousItems' | 'missions' | 'monsters' | 'monsterAllies' | 'monsterSkins' | 'monsterTraits' | 'mutations' | 'names' | 'npcDetails' | 'organs' | 'personalities' | 'placeTraits' | 'potions' | 'powers' | 'professions' | 'qualities' | 'rewards' | 'rooms' | 'roomThemes' | 'scents' | 'skinColors' | 'skinTextures' | 'sounds' | 'spellbooks' | 'structures' | 'surnames' | 'symbols' | 'tactics' | 'tastes' | 'tasteRains' | 'textures' | 'textureRains' | 'tools' | 'traps' | 'trapEffects' | 'travelShifts' | 'treasures' | 'weaknesses' | 'weapons' | 'weaponRains' | 'wizardNames' } TableName */
 
 import { activities } from "./activities.mjs";
 import { animals } from "./animals.mjs";
@@ -32,6 +32,7 @@ import { ingredients } from "./ingredients.mjs";
 import { inns } from "./inns.mjs";
 import { itemTraits } from "./item-traits.mjs";
 import { liabilities } from "./liabilities.mjs";
+import { locations } from "./locations.mjs";
 import { magicSchools } from "./magic-schools.mjs";
 import { mannerisms } from "./mannerisms.mjs";
 import { materials } from "./materials.mjs";
@@ -111,6 +112,7 @@ const tables = {
   effectRays: effects.map((effect) => `${effect} ray`),
   effectWalls: effects.map((effect) => `Wall of ${effect}`),
   effects: effects,
+  elementFields: elements.map((element) => `Field of ${element}`),
   elementFlows: elements.map((element) => `${element} flow`),
   elementRains: elements.map((element) => `${element} rain`),
   elementSkins: elements,
@@ -145,6 +147,7 @@ const tables = {
   inns: inns,
   itemTraits: itemTraits,
   liabilities: liabilities,
+  locations: locations,
   magicSchools: magicSchools,
   mannerisms: mannerisms,
   materials: materials,
